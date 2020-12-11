@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/juan___moreno/__/js/FP___/fpjs/caloriecounter/src'
+let g:netrw_dirhist_5='/Users/juan___moreno/__/js/FP___/fpjs/caloriecounter'
+let g:netrw_dirhist_4='/Users/juan___moreno/__/js/FP___/fpjs'
+let g:netrw_dirhist_3='/Users/juan___moreno/__/js/FP___'
+let g:netrw_dirhist_2='/Users/juan___moreno/__/js'
+let g:netrw_dirhist_1='/Users/juan___moreno/__/js/test'
+let g:netrw_dirhist_0='/Users/juan___moreno/__/js'
+let g:netrw_dirhist_9='/Users/juan___moreno/__/js/typescript'
+let g:netrw_dirhist_8='/Users/juan___moreno/__/js'
+let g:netrw_dirhist_7='/Users/juan___moreno/__'
