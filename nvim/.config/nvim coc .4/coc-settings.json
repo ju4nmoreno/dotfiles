@@ -1,0 +1,25 @@
+{
+  // Run prettier (and others)
+  "prettier.semi": true,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "Markdown",
+    "css",
+    "scss",
+    "hbs",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "prettier.singleQuote": true,
+  "json.format.enable": true,
+  "diagnostic.checkCurrentLine": true,
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets/"
+}
