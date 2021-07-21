@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/juan___moreno/.config/nvim__last lua'
+let g:netrw_dirhist_9='/Users/juan___moreno/.config'
+let g:netrw_dirhist_8='/Users/juan___moreno/.config/nvim'
+let g:netrw_dirhist_7='/Users/juan___moreno/.config'
+let g:netrw_dirhist_6='/Users/juan___moreno'
+let g:netrw_dirhist_5='/Users/juan___moreno/__/js/vue/testing-vue-components/src'
+let g:netrw_dirhist_4='/Users/juan___moreno/__/js/vue/testing-vue-components'
+let g:netrw_dirhist_3='/Users/juan___moreno/__/js/vue/testing-vue-components/src/components'
+let g:netrw_dirhist_2='/Users/juan___moreno/__/js/vue/testing-vue-components/src'
+let g:netrw_dirhist_1='/Users/juan___moreno/__/js/vue/testing-vue-components'

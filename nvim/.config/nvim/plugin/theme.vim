@@ -1,35 +1,25 @@
-set t_Co=256
 
-set background=light
-colorscheme PaperColor
+" colorscheme ------------------------------------
 
-let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default.dark': {
-  \       'override' : {
-  \         'color00' : ['#080808', '232'],
-  \         'linenumber_bg' : ['#080808', '232']
-  \       }
-  \     }
-  \   }
-  \ }
+" let g:gruvbox_contrast_dark = 'hard'
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+
+colorscheme ghdark
+" colorscheme gruvbox
+highlight ColorColumn ctermbg=16 guibg=#030e1b
+
+" hi SignColumn guibg=none
+" hi CursorLineNR guibg=None
+highlight Normal guibg=none
+" " highlight LineNr guifg=#ff8659
+" " highlight LineNr guifg=#aed75f
+" highlight LineNr guifg=#5eacd3
+" highlight netrwDir guifg=#5eacd3
+" highlight qfFileName guifg=#aed75f
+" hi TelescopeBorder guifg=#5eacd
 
 
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
-
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax
-augroup END
+" let g:gruvbox_invert_selection='0'

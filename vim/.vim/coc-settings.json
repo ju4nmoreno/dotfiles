@@ -1,0 +1,28 @@
+{
+  "prettier.tabWidth": 2,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "json",
+    "javascript",
+    "html",
+    "vue"
+  ],
+  "vetur.trace.server": "verbose",
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json"
+  },
+  "hover.target": "float",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "tabWidth": 2,
+      "printWidth": 100,
+      "singleQuote": true,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  }
+}
