@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jcmoreno/.oh-my-zsh"
+export ZSH="/Users/juan___moreno/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,5 +106,28 @@ alias gaca="git add . && git commit --amend"
 alias gpo="git push -f origin"
 alias gfo="git fetch origin"
 alias grh="git reset --hard"
-alias nvim="~/nvim-osx64/bin/nvim"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
+
+#!/bin/zsh
+
+SESSIONNAME="work"
+SESSIONEXISTS=$(tmux list-sessions | grep $SESSIONNAME)
+
+if [ $? != 0 ] 
+ then
+    tmux new-session -d -s $SESSIONNAME
+    tmux send-keys "cd ~/Projects/Yuxiglobal/ipr" C-m
+    tmux splitw -h -p 50
+    tmux send-keys "yarn serve" C-m
+    tmux select-pane -t 0
+    tmux send-keys "nvim" C-m
+fi
+
+alias te="tmux attach -t "$SESSIONNAME
+export LOCAL_IP=`ipconfig getifaddr en0`
+alias serve="browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000"
+
+

@@ -36,7 +36,6 @@ inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 inoremap ` ``<Esc>i
 
-
 " Find files using Telescope command-line sugar.
 nnoremap <leader>t :Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
