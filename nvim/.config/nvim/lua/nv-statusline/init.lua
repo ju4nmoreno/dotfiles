@@ -1,9 +1,7 @@
-
-" Status Line START
-let currentMode = mode()
+vim.cmd[[
 set statusline=
 set statusline+=\ %{mode()}
-set statusline+=\ [%{gitbranch#name()}]
+" set statusline+=\ [%{gitbranch#name()}]
 set statusline+=\ %f
 set statusline+=\ %M
 set statusline+=%=
@@ -28,3 +26,4 @@ au InsertLeave * hi statusline guibg=black guifg=white
 
 " default the statusline to green when entering Vim
 hi statusline guibg=green
+]]
