@@ -5,7 +5,6 @@ vim.cmd('set iskeyword+=-')
 vim.cmd('set shortmess+=c')
 
 -- vim.o.formatoptions="jcroql"
-
 vim.o.hidden = true
 vim.wo.wrap = false
 vim.cmd('set whichwrap+=<,>,[,],h,l')
@@ -21,11 +20,12 @@ vim.o.splitright = true
 vim.o.conceallevel = 0
 vim.cmd('set ts=2')
 vim.cmd('set sw=2')
-vim.bo.expandtab = true
-vim.bo.smartindent = true
+-- vim.bo.expandtab = true
+-- vim.bo.smartindent = true
 vim.wo.relativenumber = true
+vim.wo.number = true
 vim.wo.cursorline = true
-vim.o.showtabline = 2
+-- vim.o.showtabline = 2
 vim.o.showmode = false
 vim.o.backup = false
 vim.o.writebackup = false

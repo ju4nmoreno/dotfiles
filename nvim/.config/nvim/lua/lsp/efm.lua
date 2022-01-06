@@ -1,23 +1,34 @@
+USER = vim.fn.expand('$USER')
+
 local prettier = {
-    formatCommand = "prettier --stdin-filepath ${INPUT}",
-    -- formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT} --stdin",
-    formatStdin = true
+    -- formatCommand = "prettier --stdin-filepath ${INPUT}",
+    formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT} --stdin",
+    formatStdin = false
 }
 
 local eslint = {
-    lintCommand = "./node_modules/.bin/eslint -f unix --stdin --ntdin-filename ${INPUT}",
+    lintCommand = './node_modules/.bin/eslint -f visualstudio --stdin --stdin-filename ${INPUT}',
+    lintSource = 'eslint',
     lintIgnoreExitCode = true,
     lintStdin = true,
-    lintFormats = {"%f(%l,%c): %tarning %m", "%f(%l,%c): %rror %m"},
-    formatCommand = "./node_modules/.bin/eslint --fix-to-stdout  --stdin --sntdin-filename=${INPUT}",
-    formatStdin = true
+    lintFormats = {'%f(%l,%c): %tarning %m', '%f(%l,%c): %rror %m'}
 }
 
-require"lspconfig".efm.setup {
-    init_options = {documentFormatting = true},
-    filetypes = {"lua", "html", "css", "vim", "javascript", "javascript.jsx", "javascriptreact", "typescript", "typescriptreact", "typescript.tsx"},
+-- eslint = {
+-- sourceName = "eslint",
+-- command = "./node_modules/.bin/eslint",
+-- rootPatterns = {
+-- ".eslitrc.js",
+-- "package.json"
+-- },
 
+require"lspconfig".efm.setup {
+    init_options = {documentFormatting = true, hover = true, documnetSymbol = true},
+    filetypes = {
+        "typescript", "lua", "html", "css", 'scss', "vim", "javascript", "javascript.jsx", "javascriptreact", "typescriptreact", "typescript.tsx"
+    },
     settings = {
+        cmd = {"Users" .. USER .. "/lspinstall/efm/efm-langserver"},
         rootMarkers = {".git/"},
         languages = {
             lua = {
@@ -28,20 +39,13 @@ require"lspconfig".efm.setup {
             },
             html = {prettier, eslint},
             css = {prettier, eslint},
+            scss = {prettier, eslint},
             javascript = {prettier, eslint},
-            typescript = {prettier, eslint},
+            typescript = {eslint, prettier},
             javascriptreact = {prettier, eslint},
             typescriptreact = {prettier, eslint}
         }
     }
-}
-vim.cmd [[
-autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 1000)
-autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 1000)
-autocmd BufWritePre *.html lua vim.lsp.buf.formatting_sync(nil, 1000)
-autocmd BufWritePre *.css lua vim.lsp.buf.formatting_sync(nil, 1000)
-autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 1000)
-]]
 
--- autocmd FileType javascript setlocal formatprg=prettier\ --parser\ typescript
---
+}
+

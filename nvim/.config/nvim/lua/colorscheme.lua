@@ -1,4 +1,4 @@
 vim.cmd [[
-colorscheme nvcode
+colorscheme nord
 hi Normal guibg=NONE ctermbg=NONE
 ]]

@@ -34,6 +34,7 @@ set updatetime=50
 
 call plug#begin("~/.vim/plugged")
 Plug 'arcticicestudio/nord-vim'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jremmen/vim-ripgrep'

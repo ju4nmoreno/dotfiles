@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-lua/diagnostic-nvim' 
   Plug 'nvim-lua/lsp-status.nvim'
   Plug 'sbdchd/neoformat'
+
 	Plug 'tjdevries/nlua.nvim'
 	Plug 'tjdevries/lsp_extensions.nvim'
 

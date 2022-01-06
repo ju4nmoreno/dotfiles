@@ -13,12 +13,10 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-fzy-native.nvim'
-
+  Plug 'nvim-telescope/telescope.nvim'
   " Emment 
   Plug 'mattn/emmet-vim'
-
   " Themes
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'NLKNguyen/papercolor-theme'
@@ -28,7 +26,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'APZelos/blamer.nvim'
   Plug 'tpope/vim-surround'
-
   " icons
   Plug 'ryanoasis/vim-devicons'
 
