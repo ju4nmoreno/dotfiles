@@ -1,3 +1,8 @@
+export GPG_TTY=$(tty)
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -78,7 +83,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions zsh-syntax-highlighting
+  zsh-autosuggestions 
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,13 +120,13 @@ alias gco="git checkout"
 alias gc="git commit"
 alias gac="git add . && git commit"
 alias gaca="git add . && git commit --amend"
+alias gacs="git add . && git commit -S"
+alias gacsa="git add . && git commit --amend -S"
 alias gpo="git push -f origin"
 alias gfo="git fetch origin"
 alias grh="git reset --hard"
+alias gr="git rebase"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-
 
 #!/bin/zsh
 
@@ -141,12 +147,7 @@ alias grh="git reset --hard"
 # export LOCAL_IP=`ipconfig getifaddr en0`
 # alias serve="browser-sync start -s -f . --no-notify --host $LOCAL_IP --port 9000"
 
-
-
 alias luamake=/Users/juan___moreno/.config/nvim/lua-language-server/3rd/luamake/luamake
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

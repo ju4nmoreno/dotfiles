@@ -1,4 +1,9 @@
 [user]
 	name = juan moreno
-	email = juan.moreno@yuxiglobal.com
+	email = jcmm.info@gmail.com
+	signingkey = A63690D8EC0EE864FC76CF13B95ED7A6606B3F0E
 [alias]
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
