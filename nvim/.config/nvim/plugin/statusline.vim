@@ -3,7 +3,7 @@
 let currentMode = mode()
 set statusline=
 set statusline+=\ %{mode()}
-set statusline+=\ %{FugitiveStatusline()}
+" set statusline+=\ %{FugitiveStatusline()}
 set statusline+=\ %f
 set statusline+=\ %M
 set statusline+=%=

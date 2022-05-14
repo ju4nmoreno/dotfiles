@@ -1,0 +1,218 @@
+DEBUG 2022-05-13T19:30:56.156 9201  pty_process_save_termios:166: tty_fd=0
+INFO  2022-05-13T19:30:56.165 9201  set_init_2:786: startup runtimepath/packpath value: /Users/juan___moreno/.config/nvim,/etc/xdg/nvim,/Users/juan___moreno/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/usr/local/share/nvim/runtime,/usr/local/lib/nvim,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/Users/juan___moreno/.local/share/nvim/site/after,/etc/xdg/nvim/after,/Users/juan___moreno/.config/nvim/after
+DEBUG 2022-05-13T19:30:56.169 9201  tui_get_stty_erase:2202: stty/termios:erase=
+DEBUG 2022-05-13T19:30:56.169 9201  tui_tk_ti_getstr:2218: libtermkey:kbs=
+DEBUG 2022-05-13T19:30:56.169 9201  tui_tk_ti_getstr:2223: libtermkey:kdch1=[3~
+DEBUG 2022-05-13T19:30:56.170 9201  tui_tk_ti_getstr:2229: libtermkey:kmous=[M
+DEBUG 2022-05-13T19:30:56.172 9201  UI: option_set
+DEBUG 2022-05-13T19:30:56.173 9201  UI: option_set (+11 times...)
+DEBUG 2022-05-13T19:30:56.173 9201  UI: default_colors_set
+DEBUG 2022-05-13T19:30:56.173 9201  UI: option_set
+DEBUG 2022-05-13T19:30:56.173 9201  UI: option_set (+4 times...)
+DEBUG 2022-05-13T19:30:56.173 9201  UI: default_colors_set
+DEBUG 2022-05-13T19:30:56.174 9201  UI: grid_resize
+DEBUG 2022-05-13T19:30:56.174 9201  UI: grid_resize (+1 times...)
+DEBUG 2022-05-13T19:30:56.174 9201  UI: grid_clear
+DEBUG 2022-05-13T19:30:56.175 9201  handle_background_color:563: bg response: dark
+DEBUG 2022-05-13T19:30:56.196 9201  UI: option_set
+DEBUG 2022-05-13T19:30:56.211 9201  UI: default_colors_set
+DEBUG 2022-05-13T19:30:56.212 9201  UI: hl_attr_define
+DEBUG 2022-05-13T19:30:56.214 9201  UI: hl_attr_define (+34 times...)
+DEBUG 2022-05-13T19:30:56.214 9201  UI: default_colors_set
+DEBUG 2022-05-13T19:30:56.215 9201  UI: hl_attr_define
+DEBUG 2022-05-13T19:30:56.220 9201  UI: hl_attr_define (+51 times...)
+DEBUG 2022-05-13T19:30:56.220 9201  UI: default_colors_set
+DEBUG 2022-05-13T19:30:56.221 9201  UI: hl_attr_define
+INFO  2022-05-13T19:30:56.566 9201  main:572: starting main loop
+DEBUG 2022-05-13T19:30:56.567 9201  UI: hl_attr_define (+14 times...)
+DEBUG 2022-05-13T19:30:56.567 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:56.567 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:56.567 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:56.567 9201  UI: hl_attr_define
+DEBUG 2022-05-13T19:30:56.568 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:56.568 9201  UI: raw_line (+75 times...)
+DEBUG 2022-05-13T19:30:56.568 9201  UI: grid_resize
+DEBUG 2022-05-13T19:30:56.568 9201  UI: msg_set_pos
+DEBUG 2022-05-13T19:30:56.568 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:56.568 9201  UI: raw_line (+37 times...)
+DEBUG 2022-05-13T19:30:56.568 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:56.569 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:56.569 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:56.569 9201  UI: mode_info_set
+DEBUG 2022-05-13T19:30:56.569 9201  UI: mode_change
+DEBUG 2022-05-13T19:30:56.569 9201  UI: mouse_off
+DEBUG 2022-05-13T19:30:56.569 9201  UI: flush
+DEBUG 2022-05-13T19:30:56.569 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:56.569 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:56.572 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:56.572 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:56.579 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:56.579 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:56.579 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:57.117 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.118 9201  UI: flush (+6 times...)
+DEBUG 2022-05-13T19:30:57.118 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.118 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:57.118 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.119 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.139 9201  UI: flush (+1 times...)
+DEBUG 2022-05-13T19:30:57.139 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.139 9201  log_key:1017: input: <:>
+DEBUG 2022-05-13T19:30:57.139 9201  log_key:1017: input: <E>
+DEBUG 2022-05-13T19:30:57.139 9201  log_key:1017: input: <x>
+DEBUG 2022-05-13T19:30:57.140 9201  log_key:1017: input: <p>
+DEBUG 2022-05-13T19:30:57.140 9201  log_key:1017: input: <CR>
+DEBUG 2022-05-13T19:30:57.172 9201  emsg_multiline:671: (:silent) E225: global mapping already exists for  (function netrw#Explore[216]..netrw#LocalBrowseCheck[26]..<SNR>48_NetrwBrowse[250]..<SNR>48_NetrwMaps (line 146))
+DEBUG 2022-05-13T19:30:57.199 9201  emsg_multiline:671: (:silent) E31: No such mapping (function netrw#Explore[216]..netrw#LocalBrowseCheck[26]..<SNR>48_NetrwBrowse[252]..<SNR>48_PerformListing[239]..<SNR>48_NetrwWideListing (line 65))
+DEBUG 2022-05-13T19:30:57.199 9201  emsg_multiline:671: (:silent) E31: No such mapping (function netrw#Explore[216]..netrw#LocalBrowseCheck[26]..<SNR>48_NetrwBrowse[252]..<SNR>48_PerformListing[239]..<SNR>48_NetrwWideListing (line 68))
+DEBUG 2022-05-13T19:30:57.206 9201  UI: raw_line (+7 times...)
+DEBUG 2022-05-13T19:30:57.206 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.207 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.208 9201  UI: raw_line (+13 times...)
+DEBUG 2022-05-13T19:30:57.208 9201  UI: hl_attr_define
+DEBUG 2022-05-13T19:30:57.208 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.209 9201  UI: raw_line (+35 times...)
+DEBUG 2022-05-13T19:30:57.209 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.209 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:57.209 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:57.209 9201  UI: mode_change
+DEBUG 2022-05-13T19:30:57.209 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.209 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.210 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:57.214 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.214 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.214 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.214 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:57.749 9201  log_key:1017: input: <j>
+DEBUG 2022-05-13T19:30:57.750 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.751 9201  UI: flush (+3 times...)
+DEBUG 2022-05-13T19:30:57.751 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.751 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:57.751 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.751 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.752 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:57.752 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.753 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.753 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:30:57.753 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.753 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:57.754 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:57.754 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.754 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.754 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:57.754 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.754 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:57.894 9201  log_key:1017: input: <j>
+DEBUG 2022-05-13T19:30:57.894 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.894 9201  UI: flush (+4 times...)
+DEBUG 2022-05-13T19:30:57.894 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.895 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:57.895 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.895 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.895 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:57.895 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.896 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:57.896 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:30:57.896 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:57.896 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:57.897 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:57.897 9201  UI: flush
+DEBUG 2022-05-13T19:30:57.897 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.897 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:57.897 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:57.897 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:58.028 9201  log_key:1017: input: <j>
+DEBUG 2022-05-13T19:30:58.028 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:58.028 9201  UI: flush (+4 times...)
+DEBUG 2022-05-13T19:30:58.028 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:58.028 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:58.028 9201  UI: flush
+DEBUG 2022-05-13T19:30:58.028 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:58.029 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:58.029 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:58.029 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:58.029 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:30:58.029 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:58.030 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:58.030 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:58.030 9201  UI: flush
+DEBUG 2022-05-13T19:30:58.030 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:58.030 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:58.030 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:58.030 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:58.628 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:58.628 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:58.628 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:30:58.629 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:58.629 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:59.230 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:30:59.957 9201  log_key:1017: input: <j>
+DEBUG 2022-05-13T19:30:59.958 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:59.958 9201  UI: flush (+7 times...)
+DEBUG 2022-05-13T19:30:59.959 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:59.959 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:59.959 9201  UI: flush
+DEBUG 2022-05-13T19:30:59.959 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:59.960 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:30:59.960 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:59.960 9201  UI: raw_line
+DEBUG 2022-05-13T19:30:59.961 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:30:59.961 9201  UI: win_viewport
+DEBUG 2022-05-13T19:30:59.961 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:30:59.962 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:30:59.962 9201  UI: flush
+DEBUG 2022-05-13T19:30:59.962 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:30:59.962 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:31:00.093 9201  log_key:1017: input: <j>
+DEBUG 2022-05-13T19:31:00.093 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:00.094 9201  UI: flush (+3 times...)
+DEBUG 2022-05-13T19:31:00.094 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:00.094 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:31:00.094 9201  UI: flush
+DEBUG 2022-05-13T19:31:00.094 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:00.095 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:31:00.095 9201  UI: win_viewport
+DEBUG 2022-05-13T19:31:00.095 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:00.096 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:31:00.096 9201  UI: win_viewport
+DEBUG 2022-05-13T19:31:00.096 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:31:00.096 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:31:00.097 9201  UI: flush
+DEBUG 2022-05-13T19:31:00.097 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:00.097 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:31:00.097 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:00.097 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:31:00.695 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:31:00.696 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:00.696 9201  log_key:1017: input: K_EVENT
+DEBUG 2022-05-13T19:31:00.696 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:00.697 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:31:01.298 9201  inbuf_poll:451: blocking... events_enabled=1 events_pending=0
+DEBUG 2022-05-13T19:31:04.525 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:04.526 9201  UI: flush (+7 times...)
+DEBUG 2022-05-13T19:31:04.526 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:04.526 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:31:04.526 9201  UI: flush
+DEBUG 2022-05-13T19:31:04.527 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:04.829 9201  UI: flush (+1 times...)
+DEBUG 2022-05-13T19:31:04.829 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:04.830 9201  UI: raw_line (+5 times...)
+DEBUG 2022-05-13T19:31:04.830 9201  UI: flush
+DEBUG 2022-05-13T19:31:04.830 9201  inbuf_poll:451: blocking... events_enabled=0 events_pending=0
+DEBUG 2022-05-13T19:31:04.981 9201  UI: flush (+1 times...)
+DEBUG 2022-05-13T19:31:04.981 9201  UI: raw_line
+DEBUG 2022-05-13T19:31:04.982 9201  log_key:1017: input: <:>
+DEBUG 2022-05-13T19:31:04.982 9201  log_key:1017: input: <q>
+DEBUG 2022-05-13T19:31:04.982 9201  log_key:1017: input: <a>
+DEBUG 2022-05-13T19:31:04.983 9201  log_key:1017: input: <l>
+DEBUG 2022-05-13T19:31:04.983 9201  log_key:1017: input: <l>
+DEBUG 2022-05-13T19:31:04.983 9201  log_key:1017: input: <!>
+DEBUG 2022-05-13T19:31:04.983 9201  log_key:1017: input: <CR>
+DEBUG 2022-05-13T19:31:05.020 9201  UI: raw_line (+1 times...)
+DEBUG 2022-05-13T19:31:05.020 9201  UI: grid_cursor_goto
+DEBUG 2022-05-13T19:31:05.020 9201  UI: grid_cursor_goto (+1 times...)
+DEBUG 2022-05-13T19:31:05.021 9201  UI: mode_change
+DEBUG 2022-05-13T19:31:05.021 9201  UI: flush
+DEBUG 2022-05-13T19:31:05.021 9201  stream_close:107: closing Stream: 0x7f9bfc25b1e8
+DEBUG 2022-05-13T19:31:05.029 9201  UI: stop
+INFO  2022-05-13T19:31:05.030 9201  os_exit:599: Nvim exit: 0
