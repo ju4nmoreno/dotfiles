@@ -1,6 +1,7 @@
 set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
 set tabstop=2 shiftwidth=2 noexpandtab smarttab
+set colorcolumn=150
 
 let g:blamer_enabled = 1
 let g:blamer_template = '<summary> <author> <author-time>'

@@ -1,9 +1,11 @@
 [user]
 	name = juan moreno
 	email = jcmm.info@gmail.com
-	signingkey = A63690D8EC0EE864FC76CF13B95ED7A6606B3F0E
+	signingkey = 007AEA84
 [alias]
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /opt/homebrew/bin/gpg
 [commit]
-	gpgsign = true
+	gpgSign = true
+[tag]
+	gpgSign = true

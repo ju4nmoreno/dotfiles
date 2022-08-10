@@ -7,7 +7,7 @@ local lspconfig = require("lspconfig")
 
 -- require("nvim_lsp").tsserver.setup({})
 
-local servers = { "cssmodules_ls", "tsserver" }
+local servers = { "tsserver" }
 -- local servers = { "jsonls", "sumneko_lua" }
 
 lsp_installer.setup({

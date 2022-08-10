@@ -14,11 +14,12 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		-- formatting.prettier.with({ filetypes = {"css", "scss"}, extra_args = { "--use-tabs" }, only_local = "node_modules/.bin" }),
 		-- formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-		-- formatting.eslint,
-		-- null_ls.builtins.code_actions.eslint,
 		diagnostics.eslint,
+		-- formatting.eslint.with({ filetypes = {"css", "scss"}}, { extra_args = { "--use-tabs" }}),
+		-- null_ls.builtins.code_actions.eslint,
 		-- diagnostics.flake8
 	},
 	on_attach = function(client, bufnr)
@@ -29,8 +30,8 @@ null_ls.setup({
 				buffer = bufnr,
 				callback = function()
 					-- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-					-- vim.lsp.buf.format({ bufnr = bufnr })
-					vim.lsp.buf.format({ sync = true })
+					vim.lsp.buf.format({ bufnr = bufnr })
+					-- vim.lsp.buf.format({ sync = true })
 				end,
 			})
 		end

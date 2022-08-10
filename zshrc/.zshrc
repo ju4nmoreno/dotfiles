@@ -1,4 +1,5 @@
 export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -151,3 +152,5 @@ alias luamake=/Users/juan___moreno/.config/nvim/lua-language-server/3rd/luamake/
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /Users/juan___moreno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/juan___moreno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
