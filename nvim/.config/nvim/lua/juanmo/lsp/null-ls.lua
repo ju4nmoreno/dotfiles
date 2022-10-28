@@ -1,37 +1,41 @@
-local null_ls_status_ok, null_ls = pcall(require, "null-ls")
-if not null_ls_status_ok then
+local setup, null_ls = pcall(require, "null_ls")
+if not setup then
 	return
 end
 
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
 local formatting = null_ls.builtins.formatting
--- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 
+-- to setup format on save
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 null_ls.setup({
-	debug = false,
 	sources = {
-		-- formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
-		-- formatting.prettier.with({ filetypes = {"css", "scss"}, extra_args = { "--use-tabs" }, only_local = "node_modules/.bin" }),
-		-- formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.prettier,
 		formatting.stylua,
-		diagnostics.eslint,
-		-- formatting.eslint.with({ filetypes = {"css", "scss"}}, { extra_args = { "--use-tabs" }}),
-		-- null_ls.builtins.code_actions.eslint,
-		-- diagnostics.flake8
+		-- formatting.eslint.with({
+		-- 	diagnostics_format = '[eslint] #{m}\n(#{c})'
+		-- }),
+		diagnostics.eslint_d,
+		-- diagnostics.eslint.with({
+		-- 	diagnostics_format = '[eslint] #{m}\n(#{c})'
+		-- })
 	},
-	on_attach = function(client, bufnr)
-		if client.supports_method("textDocument/formatting") then
+	-- configure format on save
+	on_attach = function(current_client, bufnr)
+		if current_client.supports_method("textDocument/formatting") then
 			vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
 			vim.api.nvim_create_autocmd("BufWritePre", {
 				group = augroup,
 				buffer = bufnr,
 				callback = function()
-					-- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-					vim.lsp.buf.format({ bufnr = bufnr })
-					-- vim.lsp.buf.format({ sync = true })
+					vim.lsp.buf.format({
+						filter = function(client)
+							--  only use null-ls for formatting instead of lsp server
+							return client.name == "null-ls"
+						end,
+						bufnr = bufnr,
+					})
 				end,
 			})
 		end
