@@ -154,3 +154,8 @@ alias luamake=/Users/juan___moreno/.config/nvim/lua-language-server/3rd/luamake/
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /Users/juan___moreno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/juan___moreno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# pnpm
+export PNPM_HOME="/Users/juan___moreno/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
