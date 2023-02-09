@@ -1,10 +1,3 @@
-require("juanmo.plugins")
+require("juanmo.remap")
+require("juanmo.packer")
 require("juanmo.base")
-require("juanmo.highlights")
-require("juanmo.maps")
-require("juanmo.macos")
-require("juanmo.lsp.mason")
-require("juanmo.lsp.lspsaga")
-require("juanmo.lsp.lspconfig")
-require("juanmo.lsp.null-ls")
-
