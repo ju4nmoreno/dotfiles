@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -194,20 +204,10 @@ _G.packer_plugins = {
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  undotree = {
-    loaded = true,
-    path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/undotree",
-    url = "https://github.com/mbbill/undotree"
-  },
   ["vim-be-good"] = {
     loaded = true,
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-nightfly-guicolors"] = {
     loaded = true,

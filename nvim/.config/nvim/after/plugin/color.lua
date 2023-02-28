@@ -15,5 +15,5 @@ end
 ColorMyPencils()
 
 vim.cmd([[
-  " highlight link LspSagaFinderSelection Search
+  highlight link LspSagaFinderSelection Search
 ]])

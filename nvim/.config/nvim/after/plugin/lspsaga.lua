@@ -1,10 +1,15 @@
 local saga = require("lspsaga")
 
 saga.setup({
-	-- outline = {
-	-- 	win_position = "left",
-	-- },
-	-- ui = {
-	-- 	code_action = "",
-	-- },
+  ui = {
+    code_action = "",
+    border = "shadow",
+   winblend = 0,
+    expand = "",
+    collapse = "",
+    incoming = " ",
+    outgoing = " ",
+    hover = ' ',
+    title= true,
+  }
 })
