@@ -22,9 +22,9 @@ null_ls.setup({
 		formatting.eslint_d.with({
 			filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
 		}),
-		-- diagnostics.eslint_d.with({
-		-- 	diagnostics_format = "[eslint] #{m}\n(#{c})",
-		-- }),
+		diagnostics.eslint_d.with({
+			diagnostics_format = "[eslint] #{m}\n(#{c})",
+		}),
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
@@ -34,6 +34,7 @@ null_ls.setup({
 				group = augroup,
 				buffer = bufnr,
 				callback = function()
+					print("aaa")
 					vim.lsp.buf.format({
 						filter = function(client)
 							--  only use null-ls for formatting instead of lsp server

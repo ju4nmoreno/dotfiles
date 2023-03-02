@@ -1,18 +1,17 @@
 vim.cmd([[
-autocmd!
-set iskeyword+=-
-set foldmethod=indent
-set nofoldenable
+  autocmd!
+  set iskeyword+=-
+  set foldmethod=indent
+  set nofoldenable
 
-set list
-set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
-set colorcolumn=150
+  set list
+  set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
+  set colorcolumn=150
 
-set breakindent
-set breakindentopt=shift:2
-set showbreak=\\\\\ space
-set showbreak=↳
-
+  set breakindent
+  set breakindentopt=shift:2
+  set showbreak=\\\\\ space
+  set showbreak=↳
 ]])
 
 vim.opt.tabstop = 2
@@ -31,7 +30,7 @@ vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.hlsearch = true
-vim.opt.incsearch = false
+vim.opt.incsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 2

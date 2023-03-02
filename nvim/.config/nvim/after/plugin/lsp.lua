@@ -1,8 +1,19 @@
-local lsp = require('lsp-zero').preset("recommended")
+require("mason.settings").set({
+	ui = {
+		border = "rounded",
+	},
+})
+
+local lsp = require("lsp-zero").preset({
+	name = "minimal",
+	set_lsp_keymaps = true,
+	manage_nvim_cmp = true,
+	suggest_lsp_servers = false,
+})
 
 lsp.ensure_installed({
-  'html',
-  'tsserver'
+	"html",
+	"tsserver",
 })
 
 local check_backspace = function()
@@ -22,5 +33,22 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-space>"] = cmp.mapping.complete(),
 })
 
+local keymap = vim.keymap
+
+lsp.on_attach(function(c, bufnr)
+	local opts = { buffer = bufnr, noremap = true, silent = true }
+	keymap.set("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", opts)
+	keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+	keymap.set("n", "gD", "<cmd>Lspsaga peek_definition<CR>", opts)
+	keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
+	keymap.set({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
+	keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
+	-- keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts)
+	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
+	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
+end)
 
 lsp.setup()
+
+local lspconfig = require("lspconfig")
+lspconfig.tsserver.setup({})
