@@ -9,7 +9,8 @@ keymap.set('n', 'x', '"_x')
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
 
-keymap.set('n', '<Space>qq', ':qall!')
+keymap.set('n', '<Space>qq', ':qall!<CR>')
+keymap.set('n', '<Space>q', ':q!<CR>')
 
 -- Delete a word backwards
 keymap.set('n', 'dw', 'vb"_d')
