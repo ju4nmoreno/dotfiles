@@ -22,7 +22,6 @@ local check_backspace = function()
 end
 
 local cmp = require("cmp")
-local luasnip = require("luasnip")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
@@ -33,11 +32,26 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-space>"] = cmp.mapping.complete(),
 })
 
+lsp.setup_nvim_cmp({
+	mapping = cmp_mappings,
+	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		-- { name = "vsnip" }, -- For vsnip users.
+		{ name = "luasnip" }, -- For luasnip users.
+		-- { name = 'ultisnips' }, -- For ultisnips users.
+		-- { name = 'snippy' }, -- For snippy users.
+	}, {
+		{ name = "buffer" },
+	}),
+})
+
 local keymap = vim.keymap
 
 lsp.on_attach(function(c, bufnr)
 	local opts = { buffer = bufnr, noremap = true, silent = true }
+
 	keymap.set("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", opts)
+	keymap.set("n", "gdc", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
 	keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 	keymap.set("n", "gD", "<cmd>Lspsaga peek_definition<CR>", opts)
 	keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
@@ -45,10 +59,15 @@ lsp.on_attach(function(c, bufnr)
 	keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
 	-- keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts)
 	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
+	keymap.set("n", "<leader>D", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts)
 	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
 end)
 
 lsp.setup()
+
+vim.diagnostic.config({
+	virtual_text = false,
+})
 
 local lspconfig = require("lspconfig")
 lspconfig.tsserver.setup({})

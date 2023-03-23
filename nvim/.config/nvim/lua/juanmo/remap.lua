@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 -- Basics keys
 vim.keymap.set("n", "<leader>s", ":wall<CR>")
 vim.keymap.set("n", "<leader>qq", ":qall!<CR>")
-vim.keymap.set("n", "<leader>q", ":bd<CR>")
+vim.keymap.set("n", "<leader>q", ":q!<CR>")
 
 vim.keymap.set("n", "x", '"_x')
 
@@ -16,11 +16,11 @@ vim.keymap.set("n", "x", '"_x')
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
 
-vim.keymap.set("n", "<Space>", "<C-w>w")
-vim.keymap.set("", "<leader>h", "<C-w>h")
-vim.keymap.set("", "<leader>k", "<C-w>k")
-vim.keymap.set("", "<leader>j", "<C-w>j")
-vim.keymap.set("", "<leader>l", "<C-w>l")
+-- vim.keymap.set("n", "<Space>", "<C-w>w")
+vim.keymap.set("n", "<leader>h", "<C-w>h")
+vim.keymap.set("n", "<leader>k", "<C-w>k")
+vim.keymap.set("n", "<leader>j", "<C-w>j")
+vim.keymap.set("n", "<leader>l", "<C-w>l")
 
 -- Split window
 vim.keymap.set("n", "sh", ":split<Return><C-w>w")

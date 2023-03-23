@@ -1,4 +1,6 @@
 vim.cmd([[
+  let g:netrw_keepdir = 0
+
   autocmd!
   set iskeyword+=-
   set foldmethod=indent
@@ -12,6 +14,7 @@ vim.cmd([[
   set breakindentopt=shift:2
   set showbreak=\\\\\ space
   set showbreak=↳
+  set signcolumn=yes
 ]])
 
 vim.opt.tabstop = 2
