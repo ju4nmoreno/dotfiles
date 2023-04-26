@@ -1,11 +1,11 @@
 -- vim.o.background = "dark"
 -- require("onedarkpro").load()
 -- colorscheme lunar
-vim.cmd [[
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
-highlight SignColumn guibg=none ctermbg=white
-highlight DiagnosticHint ctermfg=7 guifg=#00ffff
+vim.cmd([[
+  colorscheme gruvbox
+  hi Normal guibg=NONE ctermbg=NONE
+  highlight SignColumn guibg=none ctermbg=white
+  highlight DiagnosticHint ctermfg=7 guifg=#00ffff
     let g:gruvbox_contrast_dark = 'hard'
     if exists('+termguicolors')
         let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -25,4 +25,4 @@ highlight DiagnosticHint ctermfg=7 guifg=#00ffff
     highlight netrwDir guifg=#5eacd3
     highlight qfFileName guifg=#aed75f
     hi TelescopeBorder guifg=#5eacd
-]]
+]])

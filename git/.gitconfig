@@ -9,3 +9,6 @@
 	gpgSign = true
 [tag]
 	gpgSign = true
+[http]
+	proxy = http://juan:nada0078@192.168.43.1:44355
+  sslVerify = false
