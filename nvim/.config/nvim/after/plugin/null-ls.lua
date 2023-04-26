@@ -17,11 +17,11 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		-- null_ls.builtins.code_actions.eslint,
 		formatting.prettier.with({
-			filetypes = { "html", "scss", "css" },
+			filetypes = { "html", "scss", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
 		}),
-		formatting.eslint_d.with({
-			filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-		}),
+		-- formatting.eslint_d.with({
+		-- 	filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+		-- }),
 		diagnostics.eslint_d.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
 		}),
@@ -34,7 +34,7 @@ null_ls.setup({
 				group = augroup,
 				buffer = bufnr,
 				callback = function()
-					print("aaa")
+					-- print("Formatting and save code...")
 					vim.lsp.buf.format({
 						filter = function(client)
 							--  only use null-ls for formatting instead of lsp server

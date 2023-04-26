@@ -1,39 +1,20 @@
--- set colorscheme to nightfly with protected call
--- in case it isn't installed
--- local status, _ = pcall(vim.cmd, "colorscheme tokyonight-night")
--- if not status then
--- 	print("Colorscheme not found!") -- print error if colorscheme not installed
--- 	return
--- end
---
--- function ColorMyPencils(color)
--- 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
--- 	vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
--- end
---
--- ColorMyPencils()
-
 vim.cmd([[
-  highlight link LspSagaFinderSelection Search
+  " colorscheme onedark
+  colorscheme tokyonight-night
+  highlight ColorColumn ctermbg=0 guibg=grey
+	hi SignColumn guibg=none
+	hi CursorLineNR guibg=None
+	highlight Normal guibg=none
+	highlight clear LineNr
+	" highlight LineNr guifg=#aed75f
+	" highlight LineNr guifg=#5eacd3
+	highlight netrwDir guifg=#5eacd3
+	highlight qfFileName guifg=#aed75f
+	hi TelescopeBorder guifg=#5eacd
 ]])
-require("github-theme").setup({
-	theme_style = "dark",
-	function_style = "italic",
-	sidebars = { "qf", "vista_kind", "terminal", "packer" },
-	hide_inactive_statusline = false,
-	-- transparent = true,
 
-	-- Change the "hint" color to the "orange" color, and make the "error" color bright red
-	colors = { hint = "orange", error = "#ff0000" },
-
-	-- Overwrite the highlight groups
-	overrides = function(c)
-		return {
-			htmlTag = { fg = c.red, bg = "#282c34", sp = c.hint, style = "underline" },
-			DiagnosticHint = { link = "LspDiagnosticsDefaultHint" },
-			-- this will remove the highlight groups
-			TSField = {},
-		}
-	end,
+require("onedarkpro").setup({
+	colors = {
+		red = "#FF0000",
+	},
 })

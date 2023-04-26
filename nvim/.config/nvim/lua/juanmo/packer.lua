@@ -73,6 +73,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- color schema
+	use("olimorris/onedarkpro.nvim")
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use("folke/tokyonight.nvim")
 	use({
@@ -93,6 +94,7 @@ return require("packer").startup(function(use)
 	-- commun
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
+	use("hoob3rt/lualine.nvim") -- lua line
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("ThePrimeagen/vim-be-good")
 	use("mattn/emmet-vim")

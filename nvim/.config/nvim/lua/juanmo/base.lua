@@ -1,13 +1,12 @@
 vim.cmd([[
-  let g:netrw_keepdir = 0
-
+  " let g:netrw_keepdir = 0
   autocmd!
   set iskeyword+=-
   set foldmethod=indent
   set nofoldenable
 
   set list
-  set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
+  " set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
   set colorcolumn=150
 
   set breakindent
@@ -29,7 +28,7 @@ vim.opt.fileencoding = "utf-8"
 vim.wo.number = true
 vim.wo.relativenumber = true
 
-vim.opt.title = true
+-- vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.hlsearch = true
@@ -66,4 +65,8 @@ vim.opt.mouse = ""
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+
+-- Undercurl
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 -- vim.opt.undotree = os.getenv("HOME") .. "/.vim/undodir"
