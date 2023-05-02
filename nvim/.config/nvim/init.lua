@@ -1,7 +1,4 @@
-require("base")
-require("highlights")
-require("maps")
-require("macos")
-require("plugins")
-
+require("juanmo.remap")
+require("juanmo.base")
+require("juanmo.packer")
 
