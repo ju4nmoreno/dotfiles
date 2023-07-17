@@ -15,12 +15,21 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
 	sources = {
 		formatting.stylua, -- lua formatter
-		-- null_ls.builtins.code_actions.eslint,
+		-- null_ls.builtins.code_actions.eslint, "javascript", "javascriptreact", "typescript", "typescriptreact"
 		formatting.prettier.with({
-			filetypes = { "html", "scss", "css", "javascript", "javascriptreact", "typescript", "typescriptreact" },
+			filetypes = {
+				"html",
+				"scss",
+				"css",
+				"vue",
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+			},
 		}),
 		-- formatting.eslint_d.with({
-		-- 	filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+		-- 	filetypes = { "javascript", "javascriptreact", "vue", "typescript", "typescriptreact" },
 		-- }),
 		diagnostics.eslint_d.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",

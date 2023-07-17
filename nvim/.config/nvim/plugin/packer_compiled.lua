@@ -244,6 +244,11 @@ _G.packer_plugins = {
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
     url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
+  ["vim-solarized8"] = {
+    loaded = true,
+    path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/vim-solarized8",
+    url = "https://github.com/lifepillar/vim-solarized8"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/juan___moreno/.local/share/nvim/site/pack/packer/start/vim-surround",

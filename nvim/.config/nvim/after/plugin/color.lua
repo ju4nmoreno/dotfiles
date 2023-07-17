@@ -1,6 +1,10 @@
 vim.cmd([[
   " colorscheme onedark
   colorscheme tokyonight-night
+  " set background=light
+  " colorscheme solarized8_high
+
+
   highlight ColorColumn ctermbg=0 guibg=grey
 	hi SignColumn guibg=none
 	hi CursorLineNR guibg=None

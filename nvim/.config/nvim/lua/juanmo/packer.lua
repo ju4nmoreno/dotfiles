@@ -80,6 +80,7 @@ return require("packer").startup(function(use)
 		"projekt0n/github-nvim-theme",
 		tag = "v0.0.7",
 	})
+	use("lifepillar/vim-solarized8")
 
 	-- Null-ts
 	use({
