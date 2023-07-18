@@ -78,9 +78,9 @@ end)
 
 lsp.setup()
 
-vim.diagnostic.config({
-	virtual_text = false,
-})
+-- vim.diagnostic.config({
+-- 	-- virtual_text = false,
+-- })
 
 local lspconfig = require("lspconfig")
 lspconfig.tsserver.setup({

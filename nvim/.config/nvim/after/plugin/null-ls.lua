@@ -28,9 +28,9 @@ null_ls.setup({
 				"typescriptreact",
 			},
 		}),
-		-- formatting.eslint_d.with({
-		-- 	filetypes = { "javascript", "javascriptreact", "vue", "typescript", "typescriptreact" },
-		-- }),
+		formatting.eslint_d.with({
+			filetypes = { "javascript", "javascriptreact", "vue", "typescript", "typescriptreact" },
+		}),
 		diagnostics.eslint_d.with({
 			diagnostics_format = "[eslint] #{m}\n(#{c})",
 		}),
