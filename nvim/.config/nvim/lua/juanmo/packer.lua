@@ -37,6 +37,8 @@ return require("packer").startup(function(use)
 	use("onsails/lspkind-nvim") -- vscode-like pictograms
 	use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
 	use("hrsh7th/nvim-cmp") -- Completion
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
 
 	use({
 		"glepnir/lspsaga.nvim",
