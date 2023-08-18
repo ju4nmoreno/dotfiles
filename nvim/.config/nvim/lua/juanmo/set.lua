@@ -1,4 +1,7 @@
 vim.cmd([[
+  filetype on
+  filetype plugin on
+  filetype indent on
   " let g:netrw_keepdir = 0
   autocmd!
   set iskeyword+=-
@@ -6,7 +9,7 @@ vim.cmd([[
   set nofoldenable
 
   set list
-  " set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
+  set listchars=tab:⤚\ ,space:·,nbsp:␣,trail:•,eol:↲,precedes:«,extends:»
   set colorcolumn=150
 
   set breakindent
@@ -14,6 +17,9 @@ vim.cmd([[
   set showbreak=\\\\\ space
   set showbreak=↳
   set signcolumn=yes
+  set autoindent
+  set cindent
+  " set smartindent
 ]])
 
 vim.opt.tabstop = 2
@@ -28,9 +34,6 @@ vim.opt.fileencoding = "utf-8"
 vim.wo.number = true
 vim.wo.relativenumber = true
 
--- vim.opt.title = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.backup = false
@@ -44,7 +47,7 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.breakindent = true
--- vim.opt.wrap = false -- No Wrap lines
+
 vim.opt.backspace = { "start", "eol", "indent" }
 vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
 vim.opt.wildignore:append({ "*/node_modules/*" })
@@ -70,7 +73,7 @@ vim.opt.backup = false
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
 -- vim.opt.undotree = os.getenv("HOME") .. "/.vim/undodir"
-vim.cmd([[ 
+vim.cmd([[
 if has("persistent_undo")
    let target_path = expand('~/.vim/undodir')
 

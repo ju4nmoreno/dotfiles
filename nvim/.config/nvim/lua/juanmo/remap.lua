@@ -11,7 +11,6 @@ keymap.set("n", "<leader>s", ":wall<CR>")
 keymap.set("n", "<leader>qq", ":qall!<CR>")
 keymap.set("n", "<leader>q", ":q!<CR>")
 -- select all
-keymap.set("n", "<C-a>", "gg<S-v>G")
 
 keymap.set("n", "x", '"_x')
 
@@ -52,7 +51,3 @@ keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
-
-
-
-

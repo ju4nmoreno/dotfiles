@@ -1,6 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
@@ -52,4 +49,11 @@ return require("packer").startup(function(use)
 	use("tpope/vim-fugitive")
 	use("lewis6991/gitsigns.nvim")
 	use("APZelos/blamer.nvim")
+
+	use({
+		"antonk52/markdowny.nvim",
+		config = function()
+			require("markdowny").setup()
+		end,
+	})
 end)
