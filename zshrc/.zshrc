@@ -116,6 +116,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# git
 alias gs="git status"
 alias gco="git checkout"
 alias gc="git commit"
@@ -127,6 +129,19 @@ alias gpo="git push -f origin"
 alias gfo="git fetch origin"
 alias grh="git reset --hard"
 alias gr="git rebase"
+# worktree
+alias gw="git worktree"
+alias gwl="git worktree list"
+alias gwa='f() { git worktree add $PWD-$1 $2 };f'
+alias gwr='f() { git worktree remove $PWD-$1 };f'
+# stash
+alias gsl="git stash list"
+alias gsi='f() { git stash --include-untracked -m $1 };f'
+alias gsc="git stash clear"
+
+# alias example='f() { echo Your arg was $1. };f'
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #!/bin/zsh
